@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliê Noiva Carioca – Vestidos de Noiva Sob Medida e Aluguel no Rio de Janeiro</title>
+    <meta name="description" content="Vestidos de noiva sob medida e aluguel no Rio de Janeiro. Alta-costura artesanal, consultoria de estilo, provas VIP. Realize o sonho do vestido perfeito. CNPJ 64.860.180/0001-64.">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <style>
+        :root {
+            --cream: #FFF8F0;
+            --blush: #F7E8E4;
+            --blush-light: #FBF3F0;
+            --champagne: #E8D5C4;
+            --gold: #C9A96E;
+            --gold-dark: #B8944F;
+            --gold-light: #D4B97F;
+            --white: #FFFFFF;
+            --off-white: #FAF9F8;
+            --sage: #D1DCD3;
+            --sage-dark: #3E5C4A;
+            --serenity: #B8C9D4;
+            --dark: #2C2C2C;
+            --charcoal: #3A3A3A;
+            --text-soft: #5C5C5C;
+            --text-muted: #7A7A7A;
+            --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
+            --shadow-medium: 0 8px 32px rgba(0, 0, 0, 0.10);
+            --shadow-gold: 0 8px 28px rgba(201, 169, 110, 0.30);
+            --radius-sm: 12px;
+            --radius-md: 18px;
+            --radius-lg: 24px;
+            --radius-xl: 32px;
+            --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--off-white);
+            color: var(--dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* HEADER */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 16px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background 0.4s ease, box-shadow 0.4s ease, padding 0.4s ease;
+            background: transparent;
+        }
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+            padding: 10px 40px;
+        }
+        .header .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: color 0.3s;
+        }
+        .header .logo span {
+            color: var(--gold-dark);
+        }
+        .header.scrolled .logo {
+            color: var(--dark);
+        }
+        .header nav {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+        .header nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 0.3px;
+            position: relative;
+            padding: 4px 0;
+            transition: color 0.3s;
+            white-space: nowrap;
+        }
+        .header nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width 0.3s ease, left 0.3s ease;
+            border-radius: 2px;
+        }
+        .header nav a:hover {
+            color: var(--gold-dark);
+        }
+        .header nav a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        .header .btn-cta-header {
+            background: var(--gold);
+            color: #fff;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            letter-spacing: 0.3px;
+            animation: pulse-soft 3s ease-in-out infinite;
+        }
+        .header .btn-cta-header:hover {
+            background: var(--gold-dark);
+            transform: scale(1.05);
+            box-shadow: var(--shadow-gold);
+        }
+        @keyframes pulse-soft {
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(201, 169, 110, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 0 14px rgba(201, 169, 110, 0);
+            }
+        }
+        .header .whatsapp-header {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #25D366;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: transform 0.3s;
+        }
+        .header .whatsapp-header:hover {
+            transform: scale(1.04);
+        }
+        .header .whatsapp-header .online-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: #25D366;
+            display: inline-block;
+            animation: blink-dot 2s infinite;
+        }
+        @keyframes blink-dot {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.3;
+            }
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            z-index: 1001;
+            background: none;
+            border: none;
+            padding: 8px;
+        }
+        .hamburger span {
+            width: 26px;
+            height: 2.5px;
+            background: var(--dark);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            display: block;
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        @media (max-width: 968px) {
+            .header {
+                padding: 12px 20px;
+            }
+            .header.scrolled {
+                padding: 8px 20px;
+            }
+            .header nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: rgba(255, 255, 255, 0.97);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
+                transform: translateY(-100%);
+                transition: transform 0.45s ease;
+                z-index: 999;
+            }
+            .header nav.active {
+                transform: translateY(0);
+            }
+            .header nav a {
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .header .btn-cta-header,
+            .header .whatsapp-header {
+                font-size: 0.8rem;
+                padding: 8px 16px;
+            }
+            .header .whatsapp-header span:not(.online-dot) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header .logo {
+                font-size: 1.15rem;
+            }
+            .header {
+                padding: 10px 14px;
+            }
+            .header.scrolled {
+                padding: 6px 14px;
+            }
+            .header .btn-cta-header {
+                padding: 7px 14px;
+                font-size: 0.72rem;
+                border-radius: 20px;
+            }
+        }
+
+        /* HERO SLIDER */
+        .hero-slider {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            min-height: 600px;
+            overflow: hidden;
+        }
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-slide.active {
+            opacity: 1;
+        }
+        .hero-slide .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(44, 44, 44, 0.25) 0%, rgba(44, 44, 44, 0.05) 40%, rgba(255, 248, 240, 0.55) 85%, rgba(255, 248, 240, 0.9) 100%);
+            z-index: 1;
+        }
+        .hero-slide .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 750px;
+            padding: 0 30px;
+            color: #fff;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+        }
+        .hero-slide .content h2 {
+            font-family: var(--font-display);
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+        }
+        .hero-slide .content p {
+            font-size: 1.15rem;
+            font-weight: 300;
+            margin-bottom: 28px;
+            letter-spacing: 0.3px;
+        }
+        .hero-slide .content .btn-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            background: var(--gold);
+            color: #fff;
+            padding: 14px 30px;
+            border-radius: 28px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.3px;
+            display: inline-block;
+        }
+        .btn-primary:hover {
+            background: var(--gold-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-gold);
+        }
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            padding: 13px 28px;
+            border-radius: 28px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            letter-spacing: 0.3px;
+            display: inline-block;
+        }
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.18);
+            border-color: #fff;
+            transform: translateY(-2px);
+        }
+        .hero-dots {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 3;
+        }
+        .hero-dots .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .hero-dots .dot.active {
+            background: var(--gold);
+            border-color: #fff;
+            transform: scale(1.2);
+        }
+        .hero-arrows {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            z-index: 3;
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+            padding: 0 20px;
+            transform: translateY(-50%);
+        }
+        .hero-arrows button {
+            pointer-events: all;
+            background: rgba(255, 255, 255, 0.55);
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: var(--dark);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(6px);
+        }
+        .hero-arrows button:hover {
+            background: rgba(255, 255, 255, 0.85);
+            box-shadow: var(--shadow-soft);
+        }
+        @media (max-width: 768px) {
+            .hero-slider {
+                height: 75vh;
+                min-height: 500px;
+            }
+            .hero-slide .content h2 {
+                font-size: 2rem;
+            }
+            .hero-slide .content p {
+                font-size: 0.95rem;
+            }
+            .btn-primary,
+            .btn-outline {
+                padding: 10px 20px;
+                font-size: 0.85rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero-slider {
+                height: 70vh;
+                min-height: 420px;
+            }
+            .hero-slide .content h2 {
+                font-size: 1.6rem;
+            }
+            .hero-slide .content p {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* SECTION GENERIC */
+        .section {
+            padding: 80px 40px;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 12px;
+            color: var(--dark);
+            letter-spacing: 0.5px;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 48px;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+        }
+        @media (max-width: 768px) {
+            .section {
+                padding: 50px 20px;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .section-subtitle {
+                font-size: 0.9rem;
+                margin-bottom: 32px;
+            }
+        }
+
+        /* TRUST BAR */
+        .trust-bar {
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            flex-wrap: wrap;
+            padding: 30px 40px;
+            background: var(--white);
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        }
+        .trust-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 24px 28px;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            min-width: 170px;
+            flex: 1;
+            max-width: 220px;
+            transition: transform 0.3s;
+        }
+        .trust-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-medium);
+        }
+        .trust-card .icon {
+            font-size: 2.4rem;
+            margin-bottom: 8px;
+        }
+        .trust-card .number {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold-dark);
+        }
+        .trust-card .label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        @media (max-width: 768px) {
+            .trust-bar {
+                gap: 14px;
+                padding: 20px 16px;
+            }
+            .trust-card {
+                padding: 16px 14px;
+                min-width: 100px;
+                max-width: 140px;
+            }
+            .trust-card .number {
+                font-size: 1.4rem;
+            }
+            .trust-card .icon {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* SOBRE */
+        .sobre-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            background: var(--blush-light);
+            border-radius: var(--radius-xl);
+            padding: 50px;
+            margin-top: 20px;
+        }
+        .sobre-grid img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-medium);
+            object-fit: cover;
+            aspect-ratio: 4/5;
+        }
+        .sobre-grid .text h3 {
+            font-family: var(--font-display);
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+        }
+        .sobre-grid .text p {
+            color: var(--text-soft);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+        .sobre-grid .valores {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .valor-card {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            padding: 16px 18px;
+            flex: 1;
+            min-width: 100px;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s;
+            border-left: 3px solid transparent;
+        }
+        .valor-card:hover {
+            transform: translateY(-5px);
+            border-left-color: var(--gold);
+            box-shadow: var(--shadow-medium);
+        }
+        .valor-card .v-icon {
+            font-size: 1.8rem;
+            margin-bottom: 4px;
+        }
+        .valor-card .v-title {
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--dark);
+        }
+        @media (max-width: 768px) {
+            .sobre-grid {
+                grid-template-columns: 1fr;
+                padding: 30px 20px;
+                gap: 28px;
+            }
+            .sobre-grid img {
+                aspect-ratio: 16/10;
+                max-height: 300px;
+                object-position: top;
+            }
+            .sobre-grid .text h3 {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* SERVIÇOS */
+        .servicos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .servico-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.4s ease;
+            cursor: pointer;
+            position: relative;
+        }
+        .servico-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-medium);
+        }
+        .servico-card .img-wrap {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+        .servico-card .img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .servico-card:hover .img-wrap img {
+            transform: scale(1.1);
+        }
+        .servico-card .img-wrap .gradient-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60%;
+            background: linear-gradient(transparent, rgba(44, 44, 44, 0.7));
+            z-index: 1;
+        }
+        .servico-card .info {
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+            margin-top: -40px;
+            background: var(--white);
+            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+            margin-top: -30px;
+            position: relative;
+            z-index: 3;
+        }
+        .servico-card .info h4 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+        }
+        .servico-card .info .price {
+            color: var(--gold-dark);
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+        .servico-card .info p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        .servico-card .info .btn-sm {
+            display: inline-block;
+            background: var(--gold);
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .servico-card .info .btn-sm:hover {
+            background: var(--gold-dark);
+        }
+        @media (max-width: 968px) {
+            .servicos-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .servicos-grid {
+                grid-template-columns: 1fr;
+            }
+            .servico-card .img-wrap {
+                height: 180px;
+            }
+        }
+
+        /* COLEÇÕES */
+        .colecoes-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+        .colecoes-tabs button {
+            background: var(--white);
+            border: 1.5px solid #e8e0d8;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+            color: var(--text-soft);
+        }
+        .colecoes-tabs button.active,
+        .colecoes-tabs button:hover {
+            background: var(--gold);
+            color: #fff;
+            border-color: var(--gold);
+        }
+        .colecoes-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .colecao-card {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s;
+            position: relative;
+        }
+        .colecao-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-medium);
+        }
+        .colecao-card .badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: var(--gold);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 14px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            z-index: 2;
+            letter-spacing: 0.5px;
+        }
+        .colecao-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+        .colecao-card .info {
+            padding: 16px;
+        }
+        .colecao-card .info h5 {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            margin-bottom: 4px;
+        }
+        .colecao-card .info .price {
+            font-weight: 700;
+            color: var(--gold-dark);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+        .colecao-card .info .btn-wa {
+            display: inline-block;
+            background: #25D366;
+            color: #fff;
+            padding: 7px 16px;
+            border-radius: 18px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .colecao-card .info .btn-wa:hover {
+            background: #1da851;
+        }
+        @media (max-width: 968px) {
+            .colecoes-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .colecoes-grid {
+                grid-template-columns: 1fr;
+            }
+            .colecao-card img {
+                height: 220px;
+            }
+        }
+
+        /* DEPOIMENTOS */
+        .depoimentos-mural {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .depoimento-destaque {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: 32px;
+            text-align: center;
+            max-width: 380px;
+            box-shadow: var(--shadow-medium);
+            flex-shrink: 0;
+        }
+        .depoimento-destaque img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 12px;
+            border: 3px solid var(--gold-light);
+        }
+        .depoimento-destaque .stars {
+            color: #f0b90b;
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+        }
+        .depoimento-destaque .text {
+            font-style: italic;
+            color: var(--text-soft);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .depoimento-destaque .name {
+            font-weight: 700;
+            margin-top: 8px;
+            color: var(--dark);
+        }
+        .depoimento-destaque .bairro {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .depoimentos-secundarios {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            flex: 1;
+            min-width: 250px;
+            max-width: 500px;
+        }
+        .depoimento-mini {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            box-shadow: var(--shadow-soft);
+            font-size: 0.85rem;
+            color: var(--text-soft);
+            font-style: italic;
+            transition: transform 0.3s;
+            border-left: 4px solid var(--gold-light);
+        }
+        .depoimento-mini:hover {
+            transform: translateX(4px);
+        }
+        .depoimento-mini .stars {
+            color: #f0b90b;
+            font-size: 0.9rem;
+        }
+        .depoimento-mini .name {
+            font-weight: 700;
+            font-style: normal;
+            color: var(--dark);
+            margin-top: 4px;
+        }
+        @media (max-width: 768px) {
+            .depoimentos-mural {
+                flex-direction: column;
+                align-items: center;
+            }
+            .depoimento-destaque {
+                max-width: 100%;
+            }
+            .depoimentos-secundarios {
+                max-width: 100%;
+            }
+        }
+
+        /* EQUIPE */
+        .equipe-grid {
+            display: flex;
+            gap: 28px;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .equipe-member {
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .equipe-member:hover {
+            transform: translateY(-6px);
+        }
+        .equipe-member .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--gold-light);
+            box-shadow: var(--shadow-soft);
+            margin-bottom: 8px;
+        }
+        .equipe-member .nome {
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        .equipe-member .cargo {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        /* MAPA */
+        .mapa-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+        .mapa-grid iframe {
+            width: 100%;
+            height: 380px;
+            border-radius: var(--radius-lg);
+            border: none;
+            box-shadow: var(--shadow-soft);
+        }
+        .mapa-info {
+            font-size: 0.9rem;
+            line-height: 2;
+            color: var(--text-soft);
+        }
+        .mapa-info strong {
+            color: var(--dark);
+        }
+        @media (max-width: 768px) {
+            .mapa-grid {
+                grid-template-columns: 1fr;
+            }
+            .mapa-grid iframe {
+                height: 280px;
+            }
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            margin-bottom: 10px;
+            box-shadow: var(--shadow-soft);
+            overflow: hidden;
+            border: 1px solid #f0e8e2;
+            transition: all 0.3s;
+        }
+        .faq-question {
+            padding: 18px 22px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.95rem;
+            color: var(--dark);
+            user-select: none;
+        }
+        .faq-question .icon {
+            font-size: 1.4rem;
+            color: var(--gold);
+            transition: transform 0.3s;
+        }
+        .faq-item.open .faq-question .icon {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 22px;
+            color: var(--text-soft);
+            font-size: 0.88rem;
+            line-height: 1.6;
+        }
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+            padding: 0 22px 18px;
+        }
+
+        /* CTA FINAL */
+        .cta-final {
+            background: var(--sage-dark);
+            color: #fff;
+            text-align: center;
+            padding: 60px 30px;
+            border-radius: var(--radius-xl);
+            margin: 0 40px 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-final h2 {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+        }
+        .cta-final p {
+            font-size: 1rem;
+            margin-bottom: 24px;
+            opacity: 0.9;
+        }
+        .cta-final .newsletter-form {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cta-final input[type="email"] {
+            padding: 14px 20px;
+            border-radius: 28px;
+            border: none;
+            width: 300px;
+            max-width: 100%;
+            font-size: 0.95rem;
+            outline: none;
+        }
+        .cta-final button {
+            background: var(--gold);
+            color: #fff;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 28px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+        }
+        .cta-final button:hover {
+            background: var(--gold-dark);
+            box-shadow: var(--shadow-gold);
+        }
+        @media (max-width: 768px) {
+            .cta-final {
+                margin: 0 16px 40px;
+                padding: 40px 20px;
+            }
+            .cta-final h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* FOOTER */
+        .footer {
+            background: var(--charcoal);
+            color: #ddd;
+            padding: 50px 40px 30px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .footer-grid h4 {
+            font-family: var(--font-display);
+            color: #fff;
+            margin-bottom: 14px;
+            font-size: 1.1rem;
+        }
+        .footer-grid p,
+        .footer-grid a {
+            font-size: 0.85rem;
+            color: #bbb;
+            text-decoration: none;
+            line-height: 2;
+            display: block;
+            transition: color 0.3s;
+        }
+        .footer-grid a:hover {
+            color: var(--gold-light);
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 28px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 28px;
+            font-size: 0.8rem;
+            color: #999;
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer .cnpj {
+            font-weight: 600;
+            color: #ccc;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+        }
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* WHATSAPP FLOATING */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 999;
+            background: #25D366;
+            color: #fff;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
+            text-decoration: none;
+            transition: all 0.3s;
+            animation: float-bob 3s ease-in-out infinite;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.55);
+        }
+        .whatsapp-float .tooltip {
+            position: absolute;
+            right: 70px;
+            background: #fff;
+            color: var(--dark);
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            box-shadow: var(--shadow-soft);
+            font-weight: 600;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .whatsapp-float:hover .tooltip {
+            opacity: 1;
+        }
+        @keyframes float-bob {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+        @media (max-width: 480px) {
+            .whatsapp-float {
+                width: 48px;
+                height: 48px;
+                bottom: 16px;
+                right: 16px;
+                font-size: 1.4rem;
+            }
+            .whatsapp-float .tooltip {
+                display: none;
+            }
+        }
+
+        /* SCROLL TO TOP */
+        .scroll-top {
+            position: fixed;
+            bottom: 90px;
+            right: 28px;
+            z-index: 998;
+            background: var(--white);
+            color: var(--gold-dark);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-soft);
+            border: none;
+            font-size: 1.2rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s;
+        }
+        .scroll-top.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+        @media (max-width: 480px) {
+            .scroll-top {
+                bottom: 75px;
+                right: 12px;
+                width: 34px;
+                height: 34px;
+                font-size: 1rem;
+            }
+        }
+
+        /* LAZY LOAD BLUR */
+        img[loading="lazy"] {
+            transition: filter 0.6s ease;
+        }
+        img.lazyloaded {
+            filter: blur(0);
+        }
+        img.lazyloading {
+            filter: blur(8px);
+        }
+
+        /* MODAL */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .modal-content {
+            background: #fff;
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+        }
+        .modal-content .close-modal {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+    </style>
+
+    <!-- Schema JSON-LD para SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Ateliê Noiva Carioca",
+            "legalName": "Klm Estilo & Impressao LTDA",
+            "taxID": "64.860.180/0001-64",
+            "description": "Ateliê de alta-costura para noivas no Rio de Janeiro. Vestidos sob medida, aluguel, consultoria de estilo e acessórios artesanais.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Rua São Clemente, 258",
+                "addressLocality": "Rio de Janeiro",
+                "addressRegion": "RJ",
+                "postalCode": "22260-004",
+                "addressCountry": "BR"
+            },
+            "telephone": "+5521999999999",
+            "openingHoursSpecification": [
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
+        ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "512"
+            },
+            "priceRange": "R$ 500 - R$ 15.000",
+            "image": "https://images.unsplash.com/photo-1594552072238-b8a33785b261?w=800",
+            "url": "https://www.atelienoivacarioca.com.br"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+            { "@type": "Question", "name": "Com quantos meses de antecedência devo encomendar meu vestido?", "acceptedAnswer": { "@type": "Answer", "text": "Recomendamos de 8 a 12 meses para vestidos sob medida. Para aluguel, é possível agendar com 2 a 4 meses de antecedência." } },
+            { "@type": "Question", "name": "Vocês fazem vestidos para madrinhas e mães?", "acceptedAnswer": { "@type": "Answer", "text": "Sim! Temos uma coleção especial para madrinhas e mães dos noivos, com a mesma atenção aos detalhes e qualidade artesanal." } },
+            { "@type": "Question", "name": "Posso levar acompanhantes na prova?", "acceptedAnswer": { "@type": "Answer", "text": "Claro! A experiência é ainda mais especial quando compartilhada. Recomendamos trazer até 3 pessoas queridas." } },
+            { "@type": "Question", "name": "Vocês atendem noivas de outros estados?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, realizamos consultorias online e presenciais em visitas programadas ao Rio de Janeiro." } },
+            { "@type": "Question", "name": "O aluguel inclui ajustes?", "acceptedAnswer": { "@type": "Answer", "text": "Sim! O aluguel inclui prova, ajustes necessários e limpeza do vestido para que você brilhe perfeitamente no grande dia." } }
+        ]
+        }
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <a href="#" class="logo">Ateliê <span>Noiva Carioca</span></a>
+        <nav id="navMenu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#colecoes">Coleções</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
+            <a href="#faq">Dúvidas</a>
+            <a href="https://wa.me/5521999999999?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20prova%20no%20Ateli%C3%AA%20Noiva%20Carioca!" class="btn-cta-header" target="_blank" rel="noopener">Agende uma Prova</a>
+            <a href="https://wa.me/5521999999999" class="whatsapp-header" target="_blank" rel="noopener">
+                <span class="online-dot"></span> (21) 99999-9999
+            </a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- HERO SLIDER -->
+    <section class="hero-slider" id="inicio">
+        <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1594552072238-b8a33785b261?w=1400&q=80');">
+            <div class="overlay"></div>
+            <div class="content" data-aos="fade-up">
+                <h2>O vestido dos seus sonhos começa aqui</h2>
+                <p>Criação artesanal, tecidos nobres e um olhar apaixonado para o seu grande dia.</p>
+                <div class="btn-group">
+                    <a href="#colecoes" class="btn-primary">Nossas Coleções</a>
+                    <a href="https://wa.me/5521999999999?text=Ol%C3%A1%2C%20quero%20agendar%20minha%20prova!" class="btn-outline" target="_blank" rel="noopener">Agende sua Prova</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1600004765965-e4d2f6f1e6d2?w=1400&q=80');">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2>Alta-costura feita para você</h2>
+                <p>Cada vestido é criado à mão, como uma obra de arte para o seu grande dia.</p>
+                <div class="btn-group">
+                    <a href="#servicos" class="btn-primary">Ver Processo Criativo</a>
+                    <a href="https://wa.me/5521999999999" class="btn-outline" target="_blank" rel="noopener">Consultoria</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1400&q=80');">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2>Referência em moda nupcial no Rio</h2>
+                <p>Desde 2015 realizando sonhos na Zona Sul e Barra da Tijuca.</p>
+                <div class="btn-group">
+                    <a href="#mapa" class="btn-primary">Como Chegar</a>
+                    <a href="https://wa.me/5521999999999" class="btn-outline" target="_blank" rel="noopener">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-dots" id="heroDots"></div>
+        <div class="hero-arrows">
+            <button id="heroPrev" aria-label="Slide anterior">&#10094;</button>
+            <button id="heroNext" aria-label="Próximo slide">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar" data-aos="fade-up">
+        <div class="trust-card"><div class="icon">✨</div><div class="number">+500</div><div class="label">Noivas Realizadas</div></div>
+        <div class="trust-card"><div class="icon">🧵</div><div class="number">Sob Medida</div><div class="label">Criação Exclusiva</div></div>
+        <div class="trust-card"><div class="icon">⭐</div><div class="number">5,0</div><div class="label">Estrelas no Google</div></div>
+    </div>
+
+    <!-- SOBRE NÓS -->
+    <section class="section" id="sobre">
+        <div class="sobre-grid" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80" alt="Estilista do Ateliê Noiva Carioca criando vestido de noiva em seu ateliê" loading="lazy">
+            <div class="text">
+                <h3>Ateliê Noiva Carioca – O seu sonho vestido de realidade</h3>
+                <p>Nascida do amor pela moda e pela felicidade das noivas cariocas, nossa estilista descobriu sua vocação ainda menina, desenhando vestidos para bonecas. Formada em Moda e com especialização em alta-costura, fundou o ateliê no coração de Botafogo, onde cada vestido é uma declaração de amor. Mais do que peças, criamos memórias afetivas.</p>
+                <p>A <strong>Klm Estilo & Impressao LTDA</strong>, CNPJ <strong>64.860.180/0001-64</strong>, representa uma empresa séria, estabelecida e completamente apaixonada por transformar noivas em obras de arte.</p>
+                <div class="valores">
+                    <div class="valor-card"><div class="v-icon">⭐</div><div class="v-title">Missão</div><small>Realizar sonhos com excelência artesanal</small></div>
+                    <div class="valor-card"><div class="v-icon">👁️</div><div class="v-title">Visão</div><small>Ser referência em moda nupcial no Brasil</small></div>
+                    <div class="valor-card"><div class="v-icon">💛</div><div class="v-title">Valores</div><small>Amor, dedicação, transparência e arte</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section" id="servicos">
+        <h2 class="section-title" data-aos="fade-up">Do primeiro esboço à última lágrima de emoção</h2>
+        <p class="section-subtitle" data-aos="fade-up">Cada detalhe pensado para você brilhar</p>
+        <div class="servicos-grid">
+            <div class="servico-card" data-aos="fade-up"><div class="img-wrap"><img src="https://images.unsplash.com/photo-1600004765965-e4d2f6f1e6d2?w=600&q=80" alt="Noiva experimentando vestido sob medida" loading="lazy"><div class="gradient-overlay"></div></div><div class="info"><h4>Vestido Sob Medida</h4><p class="price">A partir de R$ 6.900</p><p>Criação exclusiva com tecidos importados e bordados artesanais. Acompanhamento completo até o grande dia.</p><a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20saber%20sobre%20o%20vestido%20sob%20medida%20%F0%9F%92%8D" class="btn-sm" target="_blank" rel="noopener">Agendar Consultoria</a></div></div>
+            <div class="servico-card" data-aos="fade-up"><div class="img-wrap"><img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=600&q=80" alt="Closet com vestidos de noiva para aluguel" loading="lazy"><div class="gradient-overlay"></div></div><div class="info"><h4>Aluguel de Vestidos</h4><p class="price">A partir de R$ 2.500</p><p>Alta-costura disponível para locação. Inclui prova, ajustes e limpeza. Sofisticação com orçamento inteligente.</p><a href="https://wa.me/5521999999999?text=Quero%20conhecer%20os%20vestidos%20para%20aluguel!" class="btn-sm" target="_blank" rel="noopener">Ver Disponíveis</a></div></div>
+            <div class="servico-card" data-aos="fade-up"><div class="img-wrap"><img src="https://images.unsplash.com/photo-1600004766112-22e2b3d2e43e?w=600&q=80" alt="Véus, tiaras e acessórios artesanais" loading="lazy"><div class="gradient-overlay"></div></div><div class="info"><h4>Véus & Acessórios</h4><p class="price">A partir de R$ 350</p><p>Véus de diversos comprimentos, tiaras de pérolas, cintos de pedraria. A moldura final para o seu look.</p><a href="https://wa.me/5521999999999?text=Quero%20ver%20os%20acess%C3%B3rios!" class="btn-sm" target="_blank" rel="noopener">Consultar</a></div></div>
+            <div class="servico-card" data-aos="fade-up"><div class="img-wrap"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Consultoria de estilo para noivas" loading="lazy"><div class="gradient-overlay"></div></div><div class="info"><h4>Consultoria de Estilo</h4><p class="price">A partir de R$ 450</p><p>Análise de silhueta, decote e tecidos que valorizam seu corpo e sua essência. Descubra o modelo ideal.</p><a href="https://wa.me/5521999999999?text=Quero%20agendar%20consultoria%20de%20estilo!" class="btn-sm" target="_blank" rel="noopener">Agendar</a></div></div>
+            <div class="servico-card" data-aos="fade-up"><div class="img-wrap"><img src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=600&q=80" alt="Prova VIP com espumante" loading="lazy"><div class="gradient-overlay"></div></div><div class="info"><h4>Prova VIP</h4><p class="price">Experiência Exclusiva</p><p>Prova privativa com espumante e petiscos para você e até 3 convidados especiais. Atenção total.</p><a href="https://wa.me/5521999999999?text=Quero%20agendar%20prova%20VIP!" class="btn-sm" target="_blank" rel="noopener">Reservar</a></div></div>
+            <div class="servico-card" data-aos="fade-up"><div class="img-wrap"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&q=80" alt="Casal noivo e noiva felizes" loading="lazy"><div class="gradient-overlay"></div></div><div class="info"><h4>Noiva + Noivo</h4><p class="price">Pacote Completo</p><p>Cuidamos do traje do noivo também! Ternos sob medida ou aluguel, alinhados ao estilo do vestido.</p><a href="https://wa.me/5521999999999?text=Quero%20o%20pacote%20noiva%20%2B%20noivo!" class="btn-sm" target="_blank" rel="noopener">Saiba Mais</a></div></div>
+        </div>
+    </section>
+
+    <!-- COLEÇÕES -->
+    <section class="section" id="colecoes" style="background: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><circle cx=%2230%22 cy=%2230%22 r=%221.5%22 fill=%22%23d4c5b9%22 opacity=%220.15%22/></svg>');">
+        <h2 class="section-title" data-aos="fade-up">Inspire-se com nossas criações ✨</h2>
+        <p class="section-subtitle" data-aos="fade-up">Modelos exclusivos que contam histórias de amor</p>
+        <div class="colecoes-tabs" data-aos="fade-up">
+            <button class="active">Vestidos de Noiva</button>
+            <button>Vestidos de Festa</button>
+            <button>Acessórios</button>
+        </div>
+        <div class="colecoes-grid" data-aos="fade-up">
+            <div class="colecao-card"><span class="badge">Exclusivo</span><img src="https://images.unsplash.com/photo-1594552072238-b8a33785b261?w=500&q=80" alt="Vestido Aurora - sereia com renda francesa" loading="lazy"><div class="info"><h5>Vestido Aurora</h5><p class="price">A partir de R$ 7.200</p><a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Me%20encantei%20pelo%20Vestido%20Aurora%20e%20quero%20agendar%20uma%20prova!" class="btn-wa" target="_blank" rel="noopener">💍 Provar via WhatsApp</a></div></div>
+            <div class="colecao-card"><span class="badge">Novo</span><img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=500&q=80" alt="Vestido Lua - princesa com tule bordado" loading="lazy"><div class="info"><h5>Vestido Lua</h5><p class="price">A partir de R$ 8.500</p><a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20provar%20o%20Vestido%20Lua!" class="btn-wa" target="_blank" rel="noopener">💍 Provar via WhatsApp</a></div></div>
+            <div class="colecao-card"><span class="badge">Aluguel</span><img src="https://images.unsplash.com/photo-1600004765965-e4d2f6f1e6d2?w=500&q=80" alt="Vestido Sol - minimalista elegante" loading="lazy"><div class="info"><h5>Vestido Sol</h5><p class="price">Aluguel R$ 2.800 | Compra R$ 6.200</p><a href="https://wa.me/5521999999999?text=Quero%20informa%C3%A7%C3%B5es%20do%20Vestido%20Sol!" class="btn-wa" target="_blank" rel="noopener">💍 Provar via WhatsApp</a></div></div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section" id="depoimentos" style="background: linear-gradient(135deg, #fbf3f0 0%, #f7ede6 100%); border-radius: var(--radius-xl); margin: 0 40px 60px; padding: 60px 30px;">
+        <h2 class="section-title" data-aos="fade-up">Mural de Amor 💌</h2>
+        <p class="section-subtitle" data-aos="fade-up">Histórias reais de noivas que realizaram o sonho</p>
+        <div class="depoimentos-mural" data-aos="fade-up">
+            <div class="depoimento-destaque">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80" alt="Noiva Mariana" loading="lazy">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="text">"Eu chorei quando me vi no espelho! O Ateliê Noiva Carioca captou exatamente o que eu sonhava. Cada detalhe bordado à mão, um acolhimento que me fez sentir a noiva mais linda do mundo."</p>
+                <p class="name">Mariana S.</p>
+                <p class="bairro">Ipanema, RJ</p>
+            </div>
+            <div class="depoimentos-secundarios">
+                <div class="depoimento-mini"><div class="stars">⭐⭐⭐⭐⭐</div>"Vestido impecável, prova emocionante e equipe maravilhosa. Meu casamento foi um conto de fadas!"<p class="name">Juliana R. – Barra da Tijuca</p></div>
+                <div class="depoimento-mini"><div class="stars">⭐⭐⭐⭐⭐</div>"Fiz o pacote noiva+noivo e ficou tudo perfeito. Recomendo de olhos fechados!"<p class="name">Amanda L. – Copacabana</p></div>
+                <div class="depoimento-mini"><div class="stars">⭐⭐⭐⭐⭐</div>"A consultoria de estilo me salvou! Não sabia qual modelo escolher e elas me guiaram lindamente."<p class="name">Carolina M. – Botafogo</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPE -->
+    <section class="section" data-aos="fade-up">
+        <h2 class="section-title">Quem cuida do seu sonho</h2>
+        <p class="section-subtitle">Mãos talentosas que transformam tecidos em emoção</p>
+        <div class="equipe-grid">
+            <div class="equipe-member"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80" alt="Estilista e Diretora Criativa" class="avatar" loading="lazy"><p class="nome">Helena Vidal</p><p class="cargo">Estilista & Diretora Criativa</p></div>
+            <div class="equipe-member"><img src="https://images.unsplash.com/photo-1580894736030-7e4e9e3b0a9b?w=200&q=80" alt="Modelista e Costureira Chefe" class="avatar" loading="lazy"><p class="nome">Rosa Mendes</p><p class="cargo">Modelista & Costureira Chefe</p></div>
+            <div class="equipe-member"><img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=200&q=80" alt="Consultora de Estilo" class="avatar" loading="lazy"><p class="nome">Clara Nunes</p><p class="cargo">Consultora de Estilo</p></div>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section class="section" id="mapa" data-aos="fade-up">
+        <h2 class="section-title">Estamos te esperando em um pedacinho especial do Rio</h2>
+        <p class="section-subtitle">Ateliê charmoso em Botafogo, pertinho de você</p>
+        <div class="mapa-grid">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.5!2d-43.18!3d-22.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU3JzAwLjAiUyA0M8KwMTAnNDguMCJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização do Ateliê Noiva Carioca"></iframe>
+            <div class="mapa-info">
+                <p><strong>📍 Endereço:</strong> Rua São Clemente, 258 – Botafogo, Rio de Janeiro – RJ, CEP 22260-004</p>
+                <p><strong>📞 Telefone:</strong> (21) 99999-9999</p>
+                <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/5521999999999" target="_blank" rel="noopener" style="color:#25D366;font-weight:700;">(21) 99999-9999</a></p>
+                <p><strong>🕐 Horários:</strong> Seg a Sex 09h–19h | Sáb 09h–14h</p>
+                <p><strong>🚇 Referência:</strong> Próximo à estação de metrô Botafogo</p>
+                <a href="https://wa.me/5521999999999" class="btn-primary" style="margin-top:12px;" target="_blank" rel="noopener">Agendar Visita</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" data-aos="fade-up">
+        <h2 class="section-title">Tire suas dúvidas</h2>
+        <p class="section-subtitle">Respostas para as perguntas mais frequentes</p>
+        <div class="faq-item"><div class="faq-question">Com quantos meses de antecedência devo encomendar meu vestido? <span class="icon">+</span></div><div class="faq-answer">Recomendamos de 8 a 12 meses para vestidos sob medida, garantindo tranquilidade em cada etapa. Para aluguel, é possível agendar com 2 a 4 meses de antecedência.</div></div>
+        <div class="faq-item"><div class="faq-question">Vocês fazem vestidos para madrinhas e mães? <span class="icon">+</span></div><div class="faq-answer">Sim! Temos uma coleção especial para madrinhas e mães dos noivos, com a mesma atenção aos detalhes e qualidade artesanal que nos tornou referência.</div></div>
+        <div class="faq-item"><div class="faq-question">Posso levar acompanhantes na prova? <span class="icon">+</span></div><div class="faq-answer">Claro! A experiência é ainda mais especial quando compartilhada. Recomendamos trazer até 3 pessoas queridas para viver esse momento com você.</div></div>
+        <div class="faq-item"><div class="faq-question">Vocês atendem noivas de outros estados? <span class="icon">+</span></div><div class="faq-answer">Sim! Realizamos consultorias online e presenciais em visitas programadas ao Rio de Janeiro. Entre em contato para alinharmos os detalhes.</div></div>
+        <div class="faq-item"><div class="faq-question">O aluguel inclui ajustes? <span class="icon">+</span></div><div class="faq-answer">Sim! O aluguel inclui prova, ajustes necessários e limpeza do vestido para que você brilhe perfeitamente no grande dia, sem preocupações.</div></div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final" data-aos="fade-up">
+        <h2>Seu vestido de noiva é uma história que começa aqui</h2>
+        <p>Agende sua prova e ganhe um véu de renda de brinde! Use o cupom <strong>NOIVACARIOCA</strong>.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Obrigada! Entraremos em contato com o seu brinde.');">
+            <input type="email" placeholder="Digite seu melhor e-mail" required>
+            <button type="submit">Quero meu brinde 🎁</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contato">
+        <div class="footer-grid">
+            <div>
+                <h4>Ateliê Noiva Carioca</h4>
+                <p>Klm Estilo & Impressao LTDA</p>
+                <p class="cnpj">CNPJ: 64.860.180/0001-64</p>
+                <p>Alta-costura nupcial com alma carioca. Cada vestido, uma declaração de amor.</p>
+            </div>
+            <div>
+                <h4>Links Úteis</h4>
+                <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#colecoes">Coleções</a><a href="#servicos">Serviços</a><a href="#depoimentos">Depoimentos</a><a href="#contato">Contato</a>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <p>📍 Rua São Clemente, 258 – Botafogo, RJ</p>
+                <p>📞 (21) 99999-9999</p>
+                <p>💬 WhatsApp: (21) 99999-9999</p>
+                <p>✉️ contato@atelienoivacarioca.com.br</p>
+            </div>
+            <div>
+                <h4>Redes Sociais</h4>
+                <a href="#" target="_blank" rel="noopener">📸 Instagram</a>
+                <a href="#" target="_blank" rel="noopener">📘 Facebook</a>
+                <a href="#" target="_blank" rel="noopener">📌 Pinterest</a>
+                <a href="#" target="_blank" rel="noopener">▶️ YouTube</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Ateliê Noiva Carioca – Todos os direitos reservados. Criado com amor, tesoura e muitos sonhos realizados. ✨</p>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING -->
+    <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Sonhando%20com%20o%20vestido%20perfeito%20%F0%9F%92%8D" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        💬<span class="tooltip">Sonhando com o vestido? 💍</span>
+    </a>
+
+    <!-- SCROLL TO TOP -->
+    <button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">↑</button>
+
+    <!-- AOS ANIMATION LIB -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+    </script>
+    <script>
+        AOS.init({ duration: 700, offset: 60, once: true, easing: 'ease-out-cubic' });
+
+        // HEADER SCROLL
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // MOBILE MENU
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // HERO SLIDER
+        const slides = document.querySelectorAll('.hero-slide');
+        const dotsContainer = document.getElementById('heroDots');
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+        let slideInterval;
+
+        slides.forEach((_, i) => {
+            const dot = document.createElement('span');
+            dot.classList.add('dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        });
+        const dots = document.querySelectorAll('.hero-dots .dot');
+
+        function goToSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+            resetInterval();
+        }
+
+        function nextSlide() { goToSlide((currentSlide + 1) % totalSlides); }
+
+        function prevSlide() { goToSlide((currentSlide - 1 + totalSlides) % totalSlides); }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 6000);
+        }
+        document.getElementById('heroNext').addEventListener('click', nextSlide);
+        document.getElementById('heroPrev').addEventListener('click', prevSlide);
+        slideInterval = setInterval(nextSlide, 6000);
+
+        // FAQ ACCORDION
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove(
+                    'open'));
+                if (!isOpen) item.classList.add('open');
+            });
+        });
+
+        // SCROLL TO TOP
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            scrollTopBtn.classList.toggle('visible', window.scrollY > 600);
+        });
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // LAZY LOAD BLUR EFFECT
+        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+            img.classList.add('lazyloading');
+            img.addEventListener('load', () => {
+                img.classList.remove('lazyloading');
+                img.classList.add('lazyloaded');
+            });
+            if (img.complete) {
+                img.classList.remove('lazyloading');
+                img.classList.add('lazyloaded');
+            }
+        });
+
+        // COLEÇÕES TABS (simples)
+        document.querySelectorAll('.colecoes-tabs button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.colecoes-tabs button').forEach(b => b.classList
+                    .remove('active'));
+                btn.classList.add('active');
+            });
+        });
+
+        console.log('✨ Ateliê Noiva Carioca – Site carregado com amor e sofisticação.');
+    </script>
+</body>
+</html>
